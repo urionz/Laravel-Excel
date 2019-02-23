@@ -48,7 +48,7 @@
         "urionz\\Excel\\ExcelServiceProvider"
       ],
       "aliases": {
-        "Excel": "urionz\\Excel\\Facades\\Excel"
+        "Excel2": "urionz\\Excel\\Facades\\Excel"
       }
     }
   },

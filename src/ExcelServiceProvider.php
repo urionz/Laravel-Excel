@@ -43,7 +43,7 @@ class ExcelServiceProvider extends ServiceProvider
             return new FilePathHelper($this->app->make('filesystem'));
         });
 
-        $this->app->bind('excel', function () {
+        $this->app->bind('excel2', function () {
             return new Excel(
                 $this->app->make(Writer::class),
                 $this->app->make(QueuedWriter::class),
@@ -52,9 +52,9 @@ class ExcelServiceProvider extends ServiceProvider
             );
         });
 
-        $this->app->alias('excel', Excel::class);
-        $this->app->alias('excel', Exporter::class);
-        $this->app->alias('excel', Importer::class);
+        $this->app->alias('excel2', Excel::class);
+        $this->app->alias('excel2', Exporter::class);
+        $this->app->alias('excel2', Importer::class);
 
         Collection::mixin(new DownloadCollection);
         Collection::mixin(new StoreCollection);
