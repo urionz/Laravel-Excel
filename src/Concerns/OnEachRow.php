@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
-use Maatwebsite\Excel\Row;
+use urionz\Excel\Row;
 
 interface OnEachRow
 {

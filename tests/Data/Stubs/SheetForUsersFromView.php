@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace urionz\Excel\Tests\Data\Stubs;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\FromView;
+use urionz\Excel\Concerns\Exportable;
 
 class SheetForUsersFromView implements FromView
 {

@@ -1,20 +1,20 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Carbon\Carbon;
-use Maatwebsite\Excel\Excel;
+use urionz\Excel\Excel;
 use PHPUnit\Framework\Assert;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\ToArray;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\ToArray;
 use PhpOffice\PhpSpreadsheet\Cell\Cell;
 use PhpOffice\PhpSpreadsheet\Shared\Date;
-use Maatwebsite\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\Exportable;
 use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use Maatwebsite\Excel\Concerns\FromCollection;
+use urionz\Excel\Concerns\FromCollection;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use urionz\Excel\Concerns\WithCustomValueBinder;
 use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
 
 class WithCustomValueBinderTest extends TestCase

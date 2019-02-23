@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
 use Illuminate\Support\Facades\Queue;
-use Maatwebsite\Excel\Jobs\ReadChunk;
+use urionz\Excel\Jobs\ReadChunk;
 use Illuminate\Queue\Events\JobProcessing;
-use Maatwebsite\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\Importable;
 use Illuminate\Foundation\Bus\PendingDispatch;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedImport;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueImportJob;
+use urionz\Excel\Tests\Data\Stubs\QueuedImport;
+use urionz\Excel\Tests\Data\Stubs\AfterQueueImportJob;
 
 class QueuedImportTest extends TestCase
 {

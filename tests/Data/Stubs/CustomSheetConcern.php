@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace urionz\Excel\Tests\Data\Stubs;
 
 interface CustomSheetConcern
 {

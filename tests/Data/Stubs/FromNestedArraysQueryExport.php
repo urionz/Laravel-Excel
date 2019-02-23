@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace urionz\Excel\Tests\Data\Stubs;
 
 use Illuminate\Database\Query\Builder;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use urionz\Excel\Concerns\FromQuery;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\WithMapping;
+use urionz\Excel\Tests\Data\Stubs\Database\Group;
 
 class FromNestedArraysQueryExport implements FromQuery, WithMapping
 {

@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Helpers\FilePathHelper;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Maatwebsite\Excel\Exceptions\NoTypeDetectedException;
+use urionz\Excel\Exceptions\NoTypeDetectedException;
 
 class Excel implements Exporter, Importer
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
 use Illuminate\Support\Facades\Queue;
-use Maatwebsite\Excel\Jobs\QueueExport;
+use urionz\Excel\Jobs\QueueExport;
 use Illuminate\Queue\Events\JobProcessed;
-use Maatwebsite\Excel\Tests\Data\Stubs\QueuedExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\ShouldQueueExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\AfterQueueExportJob;
-use Maatwebsite\Excel\Tests\Data\Stubs\EloquentCollectionWithMappingExport;
+use urionz\Excel\Tests\Data\Stubs\QueuedExport;
+use urionz\Excel\Tests\Data\Stubs\ShouldQueueExport;
+use urionz\Excel\Tests\Data\Stubs\AfterQueueExportJob;
+use urionz\Excel\Tests\Data\Stubs\EloquentCollectionWithMappingExport;
 
 class QueuedExportTest extends TestCase
 {

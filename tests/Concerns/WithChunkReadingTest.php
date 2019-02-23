@@ -1,20 +1,20 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use PHPUnit\Framework\Assert;
 use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Tests\TestCase;
+use urionz\Excel\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use urionz\Excel\Concerns\ToArray;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\WithHeadingRow;
+use urionz\Excel\Concerns\WithBatchInserts;
+use urionz\Excel\Concerns\WithChunkReading;
+use urionz\Excel\Concerns\WithMultipleSheets;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Tests\Data\Stubs\Database\Group;
 
 class WithChunkReadingTest extends TestCase
 {

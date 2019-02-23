@@ -1,19 +1,19 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Jobs\ReadChunk;
-use Maatwebsite\Excel\Jobs\QueueImport;
+use urionz\Excel\Jobs\ReadChunk;
+use urionz\Excel\Jobs\QueueImport;
 use Illuminate\Contracts\Bus\Dispatcher;
-use Maatwebsite\Excel\Concerns\WithLimit;
+use urionz\Excel\Concerns\WithLimit;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use PhpOffice\PhpSpreadsheet\Reader\IReader;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
-use Maatwebsite\Excel\Concerns\WithProgressBar;
-use Maatwebsite\Excel\Concerns\WithChunkReading;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Imports\HeadingRowExtractor;
+use urionz\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Concerns\WithProgressBar;
+use urionz\Excel\Concerns\WithChunkReading;
+use urionz\Excel\Concerns\WithMultipleSheets;
+use urionz\Excel\Imports\HeadingRowExtractor;
 
 class ChunkReader
 {

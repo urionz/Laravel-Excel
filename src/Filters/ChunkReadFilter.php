@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Filters;
+namespace urionz\Excel\Filters;
 
 use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
 

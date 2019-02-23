@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
-use Maatwebsite\Excel\Events\Event;
-use Maatwebsite\Excel\Events\AfterSheet;
-use Maatwebsite\Excel\Events\BeforeSheet;
-use Maatwebsite\Excel\Events\BeforeExport;
-use Maatwebsite\Excel\Events\BeforeWriting;
+use urionz\Excel\Events\Event;
+use urionz\Excel\Events\AfterSheet;
+use urionz\Excel\Events\BeforeSheet;
+use urionz\Excel\Events\BeforeExport;
+use urionz\Excel\Events\BeforeWriting;
 
 trait RegistersCustomConcerns
 {

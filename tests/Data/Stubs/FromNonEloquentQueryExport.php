@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace urionz\Excel\Tests\Data\Stubs;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Query\Builder;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithCustomChunkSize;
+use urionz\Excel\Concerns\FromQuery;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\WithCustomChunkSize;
 
 class FromNonEloquentQueryExport implements FromQuery, WithCustomChunkSize
 {

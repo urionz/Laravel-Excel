@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Tests\Data\Stubs\Database\Group;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromUsersQueryExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromNonEloquentQueryExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromNestedArraysQueryExport;
-use Maatwebsite\Excel\Tests\Data\Stubs\FromUsersQueryExportWithEagerLoad;
+use urionz\Excel\Tests\Data\Stubs\FromUsersQueryExport;
+use urionz\Excel\Tests\Data\Stubs\FromNonEloquentQueryExport;
+use urionz\Excel\Tests\Data\Stubs\FromNestedArraysQueryExport;
+use urionz\Excel\Tests\Data\Stubs\FromUsersQueryExportWithEagerLoad;
 
 class FromQueryTest extends TestCase
 {

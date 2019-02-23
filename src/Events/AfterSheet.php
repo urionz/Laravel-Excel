@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Events;
+namespace urionz\Excel\Events;
 
-use Maatwebsite\Excel\Sheet;
+use urionz\Excel\Sheet;
 
 class AfterSheet extends Event
 {

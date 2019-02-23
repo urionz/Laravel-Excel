@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\SheetForUsersFromView;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\FromView;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\WithMultipleSheets;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Tests\Data\Stubs\SheetForUsersFromView;
 
 class FromViewTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Excel;
+use urionz\Excel\Excel;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\WithCustomStartCell;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Concerns\WithCustomStartCell;
 
 class WithCustomStartCellTest extends TestCase
 {

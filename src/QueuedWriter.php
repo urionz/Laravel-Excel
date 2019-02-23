@@ -1,21 +1,21 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
 use Traversable;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Jobs\CloseSheet;
-use Maatwebsite\Excel\Jobs\QueueExport;
-use Maatwebsite\Excel\Concerns\FromQuery;
-use Maatwebsite\Excel\Jobs\SerializedQuery;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
-use Maatwebsite\Excel\Jobs\AppendDataToSheet;
-use Maatwebsite\Excel\Jobs\StoreQueuedExport;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Jobs\AppendQueryToSheet;
-use Maatwebsite\Excel\Concerns\WithMultipleSheets;
-use Maatwebsite\Excel\Concerns\WithCustomChunkSize;
-use Maatwebsite\Excel\Concerns\WithCustomQuerySize;
+use urionz\Excel\Jobs\CloseSheet;
+use urionz\Excel\Jobs\QueueExport;
+use urionz\Excel\Concerns\FromQuery;
+use urionz\Excel\Jobs\SerializedQuery;
+use urionz\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Jobs\AppendDataToSheet;
+use urionz\Excel\Jobs\StoreQueuedExport;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Jobs\AppendQueryToSheet;
+use urionz\Excel\Concerns\WithMultipleSheets;
+use urionz\Excel\Concerns\WithCustomChunkSize;
+use urionz\Excel\Concerns\WithCustomQuerySize;
 
 class QueuedWriter
 {

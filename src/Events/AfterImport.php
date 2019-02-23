@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Events;
+namespace urionz\Excel\Events;
 
-use Maatwebsite\Excel\Reader;
+use urionz\Excel\Reader;
 
 class AfterImport extends Event
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
-use Maatwebsite\Excel\Validators\Failure;
+use urionz\Excel\Validators\Failure;
 
 interface SkipsOnFailure
 {

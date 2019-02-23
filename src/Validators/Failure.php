@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Validators;
+namespace urionz\Excel\Validators;
 
 use Illuminate\Contracts\Support\Arrayable;
 

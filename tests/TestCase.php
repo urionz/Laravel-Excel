@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
 use Illuminate\Http\Testing\File;
 use Illuminate\Contracts\Queue\Job;
 use PhpOffice\PhpSpreadsheet\IOFactory;
-use Maatwebsite\Excel\ExcelServiceProvider;
+use urionz\Excel\ExcelServiceProvider;
 use Orchestra\Database\ConsoleServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\Queue\ShouldQueue;

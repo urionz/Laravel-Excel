@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Faker\Factory;
 use Illuminate\Support\Facades\DB;
-use Maatwebsite\Excel\Tests\TestCase;
+use urionz\Excel\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\Group;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Tests\Data\Stubs\Database\Group;
 
 class ToModelTest extends TestCase
 {
@@ -56,7 +56,7 @@ class ToModelTest extends TestCase
 
         $this->assertDatabaseHas('users', [
             'name'  => 'Patrick Brouwers',
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         $this->assertDatabaseHas('users', [

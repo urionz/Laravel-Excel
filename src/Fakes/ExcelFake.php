@@ -1,12 +1,12 @@
 <?php
 
-namespace Maatwebsite\Excel\Fakes;
+namespace urionz\Excel\Fakes;
 
 use Illuminate\Bus\Queueable;
-use Maatwebsite\Excel\Reader;
+use urionz\Excel\Reader;
 use PHPUnit\Framework\Assert;
-use Maatwebsite\Excel\Exporter;
-use Maatwebsite\Excel\Importer;
+use urionz\Excel\Exporter;
+use urionz\Excel\Importer;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Contracts\Queue\ShouldQueue;

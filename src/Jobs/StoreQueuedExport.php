@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace urionz\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Helpers\FilePathHelper;
 
 class StoreQueuedExport implements ShouldQueue
 {

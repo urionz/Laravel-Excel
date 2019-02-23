@@ -1,16 +1,16 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Fakes\ExcelFake;
+use urionz\Excel\Fakes\ExcelFake;
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\ToModel;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\PendingDispatch;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Facades\Excel as ExcelFacade;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Facades\Excel as ExcelFacade;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class ExcelFakeTest extends TestCase

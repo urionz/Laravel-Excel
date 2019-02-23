@@ -1,15 +1,15 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
 use InvalidArgumentException;
-use Maatwebsite\Excel\Importer;
+use urionz\Excel\Importer;
 use Illuminate\Support\Collection;
 use Illuminate\Console\OutputStyle;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Maatwebsite\Excel\Exceptions\NoFilePathGivenException;
+use urionz\Excel\Exceptions\NoFilePathGivenException;
 
 trait Importable
 {

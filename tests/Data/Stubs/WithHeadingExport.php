@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Data\Stubs;
+namespace urionz\Excel\Tests\Data\Stubs;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithHeadings;
-use Maatwebsite\Excel\Concerns\FromCollection;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\WithHeadings;
+use urionz\Excel\Concerns\FromCollection;
 
 class WithHeadingExport implements FromCollection, WithHeadings
 {

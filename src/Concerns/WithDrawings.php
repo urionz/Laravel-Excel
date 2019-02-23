@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
 use PhpOffice\PhpSpreadsheet\Worksheet\BaseDrawing;
 

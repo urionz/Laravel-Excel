@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Factories;
+namespace urionz\Excel\Factories;
 
 use PhpOffice\PhpSpreadsheet\IOFactory;
 use PhpOffice\PhpSpreadsheet\Reader\IReader;

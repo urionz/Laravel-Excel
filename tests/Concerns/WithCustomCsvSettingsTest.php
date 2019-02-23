@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
-use Maatwebsite\Excel\Excel;
+use urionz\Excel\Excel;
 use PHPUnit\Framework\Assert;
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\ToArray;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Concerns\WithCustomCsvSettings;
 
 class WithCustomCsvSettingsTest extends TestCase
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace urionz\Excel\Jobs;
 
 use Illuminate\Bus\Queueable;
 

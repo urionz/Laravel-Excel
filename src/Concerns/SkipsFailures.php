@@ -1,9 +1,9 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Validators\Failure;
+use urionz\Excel\Validators\Failure;
 
 trait SkipsFailures
 {

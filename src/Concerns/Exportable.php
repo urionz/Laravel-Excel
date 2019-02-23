@@ -1,11 +1,11 @@
 <?php
 
-namespace Maatwebsite\Excel\Concerns;
+namespace urionz\Excel\Concerns;
 
-use Maatwebsite\Excel\Exporter;
+use urionz\Excel\Exporter;
 use Illuminate\Foundation\Bus\PendingDispatch;
-use Maatwebsite\Excel\Exceptions\NoFilenameGivenException;
-use Maatwebsite\Excel\Exceptions\NoFilePathGivenException;
+use urionz\Excel\Exceptions\NoFilenameGivenException;
+use urionz\Excel\Exceptions\NoFilePathGivenException;
 
 trait Exportable
 {

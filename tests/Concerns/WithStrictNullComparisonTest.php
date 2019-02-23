@@ -1,13 +1,13 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Illuminate\Support\Collection;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\WithHeadings;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Concerns\WithStrictNullComparison;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\WithHeadings;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Concerns\WithStrictNullComparison;
 
 class WithStrictNullComparisonTest extends TestCase
 {

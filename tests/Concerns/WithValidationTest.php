@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Illuminate\Validation\Rule;
-use Maatwebsite\Excel\Tests\TestCase;
+use urionz\Excel\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\WithHeadingRow;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
-use Maatwebsite\Excel\Validators\ValidationException;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\WithHeadingRow;
+use urionz\Excel\Concerns\WithValidation;
+use urionz\Excel\Concerns\WithBatchInserts;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Validators\ValidationException;
 
 class WithValidationTest extends TestCase
 {
@@ -54,7 +54,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
         };
@@ -104,7 +104,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    'conditional_required_column' => 'required_if:1,patrick@maatwebsite.nl',
+                    'conditional_required_column' => 'required_if:1,patrick@urionz.nl',
                 ];
             }
         };
@@ -113,7 +113,7 @@ class WithValidationTest extends TestCase
             $import->import('import-users.xlsx');
         } catch (ValidationException $e) {
             $this->validateFailure($e, 1, 'conditional_required_column', [
-                'The conditional_required_column field is required when 1.1 is patrick@maatwebsite.nl.',
+                'The conditional_required_column field is required when 1.1 is patrick@urionz.nl.',
             ]);
         }
 
@@ -148,7 +148,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
 
@@ -200,7 +200,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
 
@@ -254,7 +254,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    'email' => Rule::in(['patrick@maatwebsite.nl']),
+                    'email' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
         };
@@ -306,7 +306,7 @@ class WithValidationTest extends TestCase
             public function rules(): array
             {
                 return [
-                    'email' => Rule::in(['patrick@maatwebsite.nl']),
+                    'email' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
         };

@@ -1,6 +1,6 @@
 <?php
 
-namespace Maatwebsite\Excel\Helpers;
+namespace urionz\Excel\Helpers;
 
 use Illuminate\Support\Str;
 use Illuminate\Http\UploadedFile;

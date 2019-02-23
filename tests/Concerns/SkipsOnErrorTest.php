@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Throwable;
 use PHPUnit\Framework\Assert;
-use Maatwebsite\Excel\Tests\TestCase;
+use urionz\Excel\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\QueryException;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\SkipsErrors;
-use Maatwebsite\Excel\Concerns\SkipsOnError;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\SkipsErrors;
+use urionz\Excel\Concerns\SkipsOnError;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
 
 class SkipsOnErrorTest extends TestCase
 {
@@ -55,7 +55,7 @@ class SkipsOnErrorTest extends TestCase
             public function onError(Throwable $e)
             {
                 Assert::assertInstanceOf(QueryException::class, $e);
-                Assert::stringContains($e->getMessage(), 'Duplicate entry \'patrick@maatwebsite.nl\'');
+                Assert::stringContains($e->getMessage(), 'Duplicate entry \'patrick@urionz.nl\'');
 
                 $this->errors++;
             }
@@ -67,7 +67,7 @@ class SkipsOnErrorTest extends TestCase
 
         // Shouldn't have rollbacked other imported rows.
         $this->assertDatabaseHas('users', [
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         // Should have skipped inserting
@@ -107,11 +107,11 @@ class SkipsOnErrorTest extends TestCase
         $e = $import->errors()->first();
 
         $this->assertInstanceOf(QueryException::class, $e);
-        $this->stringContains($e->getMessage(), 'Duplicate entry \'patrick@maatwebsite.nl\'');
+        $this->stringContains($e->getMessage(), 'Duplicate entry \'patrick@urionz.nl\'');
 
         // Shouldn't have rollbacked other imported rows.
         $this->assertDatabaseHas('users', [
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         // Should have skipped inserting

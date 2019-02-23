@@ -1,10 +1,10 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use Illuminate\Http\Request;
-use Maatwebsite\Excel\Tests\TestCase;
-use Maatwebsite\Excel\Concerns\Exportable;
+use urionz\Excel\Tests\TestCase;
+use urionz\Excel\Concerns\Exportable;
 use Illuminate\Contracts\Support\Responsable;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -12,7 +12,7 @@ class ExportableTest extends TestCase
 {
     /**
      * @test
-     * @expectedException \Maatwebsite\Excel\Exceptions\NoFilenameGivenException
+     * @expectedException \urionz\Excel\Exceptions\NoFilenameGivenException
      * @expectedExceptionMessage A filename needs to be passed in order to download the export
      */
     public function needs_to_have_a_file_name_when_downloading()
@@ -26,7 +26,7 @@ class ExportableTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Maatwebsite\Excel\Exceptions\NoFilePathGivenException
+     * @expectedException \urionz\Excel\Exceptions\NoFilePathGivenException
      * @expectedExceptionMessage A filepath needs to be passed in order to store the export
      */
     public function needs_to_have_a_file_name_when_storing()
@@ -40,7 +40,7 @@ class ExportableTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Maatwebsite\Excel\Exceptions\NoFilePathGivenException
+     * @expectedException \urionz\Excel\Exceptions\NoFilePathGivenException
      * @expectedExceptionMessage A filepath needs to be passed in order to store the export
      */
     public function needs_to_have_a_file_name_when_queuing()
@@ -54,7 +54,7 @@ class ExportableTest extends TestCase
 
     /**
      * @test
-     * @expectedException \Maatwebsite\Excel\Exceptions\NoFilenameGivenException
+     * @expectedException \urionz\Excel\Exceptions\NoFilenameGivenException
      * @expectedExceptionMessage A filename needs to be passed in order to download the export
      */
     public function responsable_needs_to_have_file_name_configured_inside_the_export()

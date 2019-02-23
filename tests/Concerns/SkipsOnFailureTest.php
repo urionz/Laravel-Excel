@@ -1,19 +1,19 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests\Concerns;
+namespace urionz\Excel\Tests\Concerns;
 
 use PHPUnit\Framework\Assert;
 use Illuminate\Validation\Rule;
-use Maatwebsite\Excel\Tests\TestCase;
+use urionz\Excel\Tests\TestCase;
 use Illuminate\Database\Eloquent\Model;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Validators\Failure;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\SkipsFailures;
-use Maatwebsite\Excel\Concerns\SkipsOnFailure;
-use Maatwebsite\Excel\Concerns\WithValidation;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
-use Maatwebsite\Excel\Tests\Data\Stubs\Database\User;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Validators\Failure;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\SkipsFailures;
+use urionz\Excel\Concerns\SkipsOnFailure;
+use urionz\Excel\Concerns\WithValidation;
+use urionz\Excel\Concerns\WithBatchInserts;
+use urionz\Excel\Tests\Data\Stubs\Database\User;
 
 class SkipsOnFailureTest extends TestCase
 {
@@ -57,7 +57,7 @@ class SkipsOnFailureTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
 
@@ -82,7 +82,7 @@ class SkipsOnFailureTest extends TestCase
 
         // Shouldn't have rollbacked other imported rows.
         $this->assertDatabaseHas('users', [
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         // Should have skipped inserting
@@ -121,7 +121,7 @@ class SkipsOnFailureTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
 
@@ -154,7 +154,7 @@ class SkipsOnFailureTest extends TestCase
 
         // Shouldn't have rollbacked/skipped the rest of the batch.
         $this->assertDatabaseHas('users', [
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         // Should have skipped inserting
@@ -191,7 +191,7 @@ class SkipsOnFailureTest extends TestCase
             public function rules(): array
             {
                 return [
-                    '1' => Rule::in(['patrick@maatwebsite.nl']),
+                    '1' => Rule::in(['patrick@urionz.nl']),
                 ];
             }
         };
@@ -209,7 +209,7 @@ class SkipsOnFailureTest extends TestCase
 
         // Shouldn't have rollbacked other imported rows.
         $this->assertDatabaseHas('users', [
-            'email' => 'patrick@maatwebsite.nl',
+            'email' => 'patrick@urionz.nl',
         ]);
 
         // Should have skipped inserting

@@ -1,24 +1,24 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
-use Maatwebsite\Excel\Excel;
+use urionz\Excel\Excel;
 use PHPUnit\Framework\Assert;
-use Maatwebsite\Excel\Importer;
+use urionz\Excel\Importer;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Collection;
 use Illuminate\Contracts\View\View;
-use Maatwebsite\Excel\Concerns\ToArray;
-use Maatwebsite\Excel\Concerns\FromView;
-use Maatwebsite\Excel\Concerns\Exportable;
-use Maatwebsite\Excel\Concerns\Importable;
-use Maatwebsite\Excel\Concerns\WithEvents;
-use Maatwebsite\Excel\Events\BeforeWriting;
-use Maatwebsite\Excel\Concerns\FromCollection;
-use Maatwebsite\Excel\Facades\Excel as ExcelFacade;
-use Maatwebsite\Excel\Tests\Data\Stubs\EmptyExport;
-use Maatwebsite\Excel\Concerns\WithCustomCsvSettings;
-use Maatwebsite\Excel\Concerns\RegistersEventListeners;
+use urionz\Excel\Concerns\ToArray;
+use urionz\Excel\Concerns\FromView;
+use urionz\Excel\Concerns\Exportable;
+use urionz\Excel\Concerns\Importable;
+use urionz\Excel\Concerns\WithEvents;
+use urionz\Excel\Events\BeforeWriting;
+use urionz\Excel\Concerns\FromCollection;
+use urionz\Excel\Facades\Excel as ExcelFacade;
+use urionz\Excel\Tests\Data\Stubs\EmptyExport;
+use urionz\Excel\Concerns\WithCustomCsvSettings;
+use urionz\Excel\Concerns\RegistersEventListeners;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
 class ExcelTest extends TestCase

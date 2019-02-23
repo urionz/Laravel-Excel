@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel;
+namespace urionz\Excel;
 
 use Illuminate\Support\Collection;
 use Illuminate\Support\ServiceProvider;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
-use Maatwebsite\Excel\Mixins\StoreCollection;
-use Maatwebsite\Excel\Console\ExportMakeCommand;
-use Maatwebsite\Excel\Console\ImportMakeCommand;
-use Maatwebsite\Excel\Mixins\DownloadCollection;
+use urionz\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Mixins\StoreCollection;
+use urionz\Excel\Console\ExportMakeCommand;
+use urionz\Excel\Console\ImportMakeCommand;
+use urionz\Excel\Mixins\DownloadCollection;
 use Laravel\Lumen\Application as LumenApplication;
 
 class ExcelServiceProvider extends ServiceProvider

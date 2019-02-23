@@ -1,17 +1,17 @@
 <?php
 
-namespace Maatwebsite\Excel\Jobs;
+namespace urionz\Excel\Jobs;
 
-use Maatwebsite\Excel\Sheet;
+use urionz\Excel\Sheet;
 use Illuminate\Bus\Queueable;
 use Illuminate\Support\Facades\DB;
 use PhpOffice\PhpSpreadsheet\Cell\Cell;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use PhpOffice\PhpSpreadsheet\Reader\IReader;
-use Maatwebsite\Excel\Helpers\FilePathHelper;
-use Maatwebsite\Excel\Filters\ChunkReadFilter;
-use Maatwebsite\Excel\Imports\HeadingRowExtractor;
-use Maatwebsite\Excel\Concerns\WithCustomValueBinder;
+use urionz\Excel\Helpers\FilePathHelper;
+use urionz\Excel\Filters\ChunkReadFilter;
+use urionz\Excel\Imports\HeadingRowExtractor;
+use urionz\Excel\Concerns\WithCustomValueBinder;
 
 class ReadChunk implements ShouldQueue
 {

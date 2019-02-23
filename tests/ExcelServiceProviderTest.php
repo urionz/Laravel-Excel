@@ -1,8 +1,8 @@
 <?php
 
-namespace Maatwebsite\Excel\Tests;
+namespace urionz\Excel\Tests;
 
-use Maatwebsite\Excel\Excel;
+use urionz\Excel\Excel;
 
 class ExcelServiceProviderTest extends TestCase
 {

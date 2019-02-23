@@ -1,14 +1,14 @@
 <?php
 
-namespace Maatwebsite\Excel\Imports;
+namespace urionz\Excel\Imports;
 
-use Maatwebsite\Excel\Row;
-use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithMapping;
-use Maatwebsite\Excel\Concerns\WithProgressBar;
-use Maatwebsite\Excel\Concerns\WithBatchInserts;
+use urionz\Excel\Row;
+use urionz\Excel\Concerns\ToModel;
+use urionz\Excel\Concerns\WithMapping;
+use urionz\Excel\Concerns\WithProgressBar;
+use urionz\Excel\Concerns\WithBatchInserts;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
-use Maatwebsite\Excel\Concerns\WithCalculatedFormulas;
+use urionz\Excel\Concerns\WithCalculatedFormulas;
 
 class ModelImporter
 {
